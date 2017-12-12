@@ -20,10 +20,10 @@ const stringToMs = require('string-to-ms');
 stringToMs('  3w  ');
 
 // return 86400000ms
-stringToMs('1d');
+stringToMs('0.5d');
 
 // return 86400000ms
-stringToMs('0.5d');
+stringToMs('12h');
 
 // return 600ms
 stringToMs(600);
