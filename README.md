@@ -1,13 +1,14 @@
 # String To Milliseconds
 
 Module that converts the string into milliseconds. Understands following macross:
+
 | Time | Macros | Example |
 | ------ | :------: | :------: |
-| week | w | `7w`
-| day | d | `31d`
-| hour | h | `24h`
-| minute | m | `60m`
-| second | s | `60s`
+| week | w | `7w` |
+| day | d | `31d` |
+| hour | h | `24h` |
+| minute | m | `60m` |
+| second | s | `60s` |
 
 
 ## Usage
