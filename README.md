@@ -15,11 +15,14 @@ Module that converts the string into milliseconds. Understands following macross
 ```javascript
 const stringToMs = require('string-to-ms');
 
+// return 1814400000ms
+stringToMs('  3w  ');
+
 // return 86400000ms
 stringToMs('1d');
 
-// return 1814400000ms
-stringToMs('  3w  ');
+// return 86400000ms
+stringToMs('0.5d');
 
 // return 1371600000ms
 stringToMs('1d 4d 10d 20h 1h');
