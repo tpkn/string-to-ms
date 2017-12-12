@@ -10,6 +10,7 @@ Module that converts the string into milliseconds. Understands following macross
 | minute | m | `60m` |
 | second | s | `60s` |
 
+Number without macros would be interpreted as milliseconds.
 
 ## Usage
 ```javascript
@@ -23,6 +24,9 @@ stringToMs('1d');
 
 // return 86400000ms
 stringToMs('0.5d');
+
+// return 600ms
+stringToMs(600);
 
 // return 1371600000ms
 stringToMs('1d 4d 10d 20h 1h');
