@@ -1,8 +1,8 @@
 /*!
- * String To Milliseconds (v1.0.3.20171210), http://tpkn.me/
+ * String To Milliseconds (v1.1.0.20171217), http://tpkn.me/
  */
 
-module.exports = str => {
+function stringToMs(str){
    let summ = 0, time, type, value;
    let time_list = ('' + str).split(' ').filter(v => v != '' && /^(\d{1,}\.)?\d{1,}([wdhms])?$/i.test(v));
 
@@ -35,4 +35,16 @@ module.exports = str => {
       }
    }
    return summ;
+}
+
+if(typeof module !== 'undefined' && typeof module.exports !== 'undefined'){
+   module.exports = stringToMs;
+}else{
+   if(typeof define === 'function' && define.amd){
+      define([], function(){
+         return stringToMs;
+      });
+   }else{
+      window.stringToMs = stringToMs;
+   }
 }

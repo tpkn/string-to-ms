@@ -34,3 +34,7 @@ stringToMs('1d 4d 10d 20h 1h');
 // return 202147207000
 stringToMs('2335d  0112h 12112dsds 7s');
 ```
+
+## Changelog 
+#### 2017-12-17:
+- Now works in browser too
