@@ -1,5 +1,5 @@
 /*!
- * String To Milliseconds (v1.1.0.20171217), http://tpkn.me/
+ * String To Milliseconds, http://tpkn.me/
  */
 
 function stringToMs(str){
