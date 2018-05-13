@@ -1,5 +1,4 @@
 # String To Milliseconds
-
 Module that converts the string into milliseconds. Understands following macross:
 
 | Time | Macros | Example |
@@ -11,6 +10,13 @@ Module that converts the string into milliseconds. Understands following macross
 | second | s | `60s` |
 
 Number without macros would be interpreted as milliseconds.
+
+
+## Installation
+```bash
+npm install string-to-ms
+```
+
 
 ## Usage
 ```javascript
